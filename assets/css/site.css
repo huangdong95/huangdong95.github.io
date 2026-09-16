@@ -82,6 +82,12 @@ a:hover { text-decoration: underline; }
 .paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
 .paper-links a { margin: 0 0.25rem; }
+.coauthor {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+.coauthor:hover { text-decoration: underline solid; }
 .paper-links a:first-child { margin-left: 0; }
 
 /* Accordion abstract (native <details>, no JS) */

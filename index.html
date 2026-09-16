@@ -44,7 +44,12 @@ layout: default
       <h4 class="paper-title">{{ p.title }}{% if p.note %} <em class="paper-note">{{ p.note }}</em>{% endif %}</h4>
       {% if p.coauthors or p.venue or p.year %}
       <p class="paper-meta">
-        {% if p.coauthors %}with {{ p.coauthors }}{% endif %}
+        {% if p.coauthors %}with {% assign n = p.coauthors | size -%}
+          {%- for c in p.coauthors -%}
+            {%- if forloop.index > 1 %}{% if n > 2 %},{% endif %} {% if forloop.last %}and {% endif %}{% endif -%}
+            {%- if c.url %}<a class="coauthor" href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif -%}
+          {%- endfor -%}
+        {% endif %}
         {% if p.coauthors and p.venue %} · {% endif %}
         {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}
         {% if p.year %} ({{ p.year }}){% endif %}
