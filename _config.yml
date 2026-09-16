@@ -9,7 +9,7 @@ author:
   title: Assistant Professor of Finance
   affiliation: Your University
   email: your.email@university.edu
-  headshot: /assets/img/headshot.svg   # placeholder; change to headshot.jpg once you add your photo
+  headshot: /assets/img/headshot.jpg
   cv: /assets/cv.pdf
   links:
     - label: Google Scholar
