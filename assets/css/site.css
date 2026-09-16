@@ -78,15 +78,14 @@ a:hover { text-decoration: underline; }
 }
 .paper { margin-bottom: 1.75rem; }
 .paper-title { margin: 0 0 0.2rem; font-size: 1.15rem; }
-.paper-note { font-weight: normal; color: var(--muted); font-size: 0.95rem; }
-.paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); font-size: 0.95rem; }
+.paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
+.paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
 .paper-links a { margin-right: 1rem; }
 
 /* Accordion abstract (native <details>, no JS) */
 .abstract summary {
   cursor: pointer;
   color: var(--accent);
-  font-size: 0.95rem;
   user-select: none;
 }
 .abstract summary:hover { text-decoration: underline; }
@@ -94,7 +93,6 @@ a:hover { text-decoration: underline; }
   margin: 0.5rem 0 0;
   padding-left: 1rem;
   border-left: 3px solid var(--rule);
-  font-size: 0.95rem;
 }
 
 .site-footer {
