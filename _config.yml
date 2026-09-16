@@ -18,6 +18,9 @@ author:
       url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6040296
 
 # Jekyll settings
+# No theme: github-pages defaults to jekyll-theme-primer, whose style.scss would
+# collide with our stylesheet. All layout/CSS lives in this repo.
+theme: null
 markdown: kramdown
 permalink: pretty
 plugins:

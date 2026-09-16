@@ -8,7 +8,7 @@ Personal academic site, built with Jekyll and served by GitHub Pages.
 - **Papers** – add an entry to `_data/papers.yml`. Put PDFs in `assets/papers/`.
 - **Headshot** – replace `assets/img/headshot.jpg`.
 - **CV** – put it at `assets/cv.pdf`.
-- **Styling** – `assets/css/style.css`.
+- **Styling** – `assets/css/site.css`.
 - **New pages** – create e.g. `teaching.md` with `layout: default` front matter and link it from `_layouts/default.html`.
 
 ## Local preview
