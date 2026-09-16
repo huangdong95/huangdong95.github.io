@@ -23,6 +23,9 @@
   status: Working Papers
   year: 2025
   nber: 33669
+  media:
+    - label: Auto Finance News
+      url: https://www.autofinancenews.net/allposts/technology/ai-debt-collectors-fare-worse-than-humans/
   abstract: >
     How good is AI at persuading humans to perform costly actions? We study calls made
     to get delinquent consumer borrowers to repay. Regression discontinuity and a
