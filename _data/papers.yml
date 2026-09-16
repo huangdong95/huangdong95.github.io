@@ -1,7 +1,7 @@
 # One entry per paper. Order within each status group is the order shown.
 # status must match a group name in index.html ("Job Market Paper" or "Working Papers").
 # Optional fields: coauthors, note (italic text after the title), venue, year,
-#                  pdf, nber (NBER working paper number), doi, abstract.
+#                  pdf, nber (NBER working paper number), doi, media (press/column URL), abstract.
 
 - title: "Delegating Dirty Work: Blame Shifting and the Boundary of the Firm"
   status: Job Market Paper
@@ -38,6 +38,7 @@
   status: Working Papers
   year: 2026
   nber: 34837
+  media: https://cepr.org/voxeu/columns/non-fungible-token-bubble-what-investors-actually-earned
   abstract: >
     NFTs provided an extraordinary real-time laboratory for bubble economics: returns
     were exceptionally right-skewed, illiquidity pervaded even the most active

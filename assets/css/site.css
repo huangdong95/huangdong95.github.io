@@ -80,7 +80,8 @@ a:hover { text-decoration: underline; }
 .paper-title { margin: 0 0 0.2rem; font-size: 1.15rem; }
 .paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
-.paper-links a { margin-right: 1rem; }
+.paper-links a { margin: 0 0.25rem; }
+.paper-links a:first-child { margin-left: 0; }
 
 /* Accordion abstract (native <details>, no JS) */
 .abstract summary {
