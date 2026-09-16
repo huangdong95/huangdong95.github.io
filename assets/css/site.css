@@ -57,6 +57,7 @@ a:hover { text-decoration: underline; }
   width: 340px;
   height: auto;
   border-radius: 6px;
+  margin-top: 13px; /* align top edge with the cap height of the h1, not its line box */
 }
 .bio h1 { margin: 0 0 0.25rem; font-size: 2rem; }
 .bio .role { margin: 0 0 1rem; color: var(--muted); }
