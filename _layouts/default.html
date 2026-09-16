@@ -9,11 +9,15 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <a class="site-name" href="{{ '/' | relative_url }}">
+      <img class="site-logo" src="{{ '/assets/img/yale-som-shield.svg' | relative_url }}" alt="">
+      {{ site.author.name }} @ Yale SOM
+    </a>
     <nav class="site-nav">
       <!-- Add more pages here as the site grows, e.g.
       <a href="{{ '/teaching/' | relative_url }}">Teaching</a> -->
-      <a href="{{ site.author.cv | relative_url }}">CV</a>
+      <!-- CV link disabled until assets/cv.pdf is ready; uncomment to re-enable:
+      <a href="{{ site.author.cv | relative_url }}">CV</a> -->
     </nav>
   </header>
 
