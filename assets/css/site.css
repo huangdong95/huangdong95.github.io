@@ -85,9 +85,10 @@ a:hover { text-decoration: underline; }
 .coauthor {
   color: inherit;
   text-decoration: underline dotted;
+  text-decoration-color: #b8b8b8;
   text-underline-offset: 3px;
 }
-.coauthor:hover { text-decoration: underline solid; }
+.coauthor:hover { text-decoration: underline solid; text-decoration-color: var(--muted); }
 .paper-links a:first-child { margin-left: 0; }
 
 /* Accordion abstract (native <details>, no JS) */
