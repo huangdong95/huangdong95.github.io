@@ -78,6 +78,7 @@ a:hover { text-decoration: underline; }
 }
 .paper { margin-bottom: 1.75rem; }
 .paper-title { margin: 0 0 0.2rem; font-size: 1.15rem; }
+.paper-note { font-weight: normal; color: var(--muted); font-size: 0.95rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); font-size: 0.95rem; }
 .paper-links a { margin-right: 1rem; }
 

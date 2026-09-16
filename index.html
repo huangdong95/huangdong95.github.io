@@ -30,7 +30,7 @@ layout: default
 </section>
 
 {% assign groups = site.data.papers | group_by: "status" %}
-{% assign order = "Publications,Working Papers" | split: "," %}
+{% assign order = "Job Market Paper,Working Papers" | split: "," %}
 
 <section class="papers">
   <h2>Research</h2>
@@ -41,18 +41,22 @@ layout: default
     <h3 class="group-title">{{ name }}</h3>
     {% for p in g.items %}
     <article class="paper">
-      <h4 class="paper-title">{{ p.title }}</h4>
+      <h4 class="paper-title">{{ p.title }}{% if p.note %} <em class="paper-note">{{ p.note }}</em>{% endif %}</h4>
+      {% if p.coauthors or p.venue or p.year %}
       <p class="paper-meta">
         {% if p.coauthors %}with {{ p.coauthors }}{% endif %}
         {% if p.coauthors and p.venue %} · {% endif %}
         {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}
         {% if p.year %} ({{ p.year }}){% endif %}
       </p>
+      {% endif %}
+      {% if p.pdf or p.nber or p.doi %}
       <p class="paper-links">
         {% if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
-        {% if p.ssrn %}<a href="{{ p.ssrn }}">SSRN</a>{% endif %}
+        {% if p.nber %}<a href="https://www.nber.org/papers/w{{ p.nber }}">NBER Working Paper No. {{ p.nber }}</a>{% endif %}
         {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Journal</a>{% endif %}
       </p>
+      {% endif %}
       {% if p.abstract %}
       <details class="abstract">
         <summary>Abstract</summary>
