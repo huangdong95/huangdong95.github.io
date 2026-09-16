@@ -1,0 +1,28 @@
+# One entry per paper. Order within each status group is the order shown.
+# status must be "Publications" or "Working Papers" (see index.html for the group order).
+# Optional fields: coauthors, venue, year, pdf, ssrn, doi, abstract.
+
+- title: "Example Published Paper: Asset Prices and Something Important"
+  coauthors: "Jane Coauthor and John Coauthor"
+  venue: "Journal of Finance"
+  year: 2025
+  status: Publications
+  pdf: /assets/papers/example-published.pdf
+  doi: 10.1111/jofi.00000
+  abstract: >
+    Replace with the abstract. Using the ">" block style lets you write the abstract
+    across multiple lines in this file; Jekyll joins them into one paragraph.
+
+- title: "Example Working Paper: Evidence from a Natural Experiment"
+  coauthors: "Jane Coauthor"
+  year: 2026
+  status: Working Papers
+  ssrn: https://ssrn.com/abstract=0000000
+  abstract: >
+    Replace with the abstract of the working paper.
+
+- title: "Example Solo-Authored Working Paper"
+  status: Working Papers
+  abstract: >
+    Papers without coauthors simply omit the coauthors field. Papers without a
+    PDF or link simply omit those fields and no link is shown.

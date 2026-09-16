@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<section class="intro">
+  <img class="headshot" src="{{ site.author.headshot | relative_url }}" alt="Photo of {{ site.author.name }}">
+  <div class="bio">
+    <h1>{{ site.author.name }}</h1>
+    <p class="role">{{ site.author.title }}<br>{{ site.author.affiliation }}</p>
+    <p>
+      I am a finance professor whose research focuses on ... Replace this paragraph with
+      a short bio: research interests, where you got your PhD, and anything else
+      you want visitors to know first.
+    </p>
+    <p class="links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      {% for l in site.author.links %}
+      <a href="{{ l.url }}">{{ l.label }}</a>
+      {% endfor %}
+    </p>
+  </div>
+</section>
+
+{% assign groups = site.data.papers | group_by: "status" %}
+{% assign order = "Publications,Working Papers" | split: "," %}
+
+<section class="papers">
+  <h2>Research</h2>
+
+  {% for name in order %}
+    {% assign g = groups | where: "name", name | first %}
+    {% if g %}
+    <h3 class="group-title">{{ name }}</h3>
+    {% for p in g.items %}
+    <article class="paper">
+      <h4 class="paper-title">{{ p.title }}</h4>
+      <p class="paper-meta">
+        {% if p.coauthors %}with {{ p.coauthors }}{% endif %}
+        {% if p.coauthors and p.venue %} · {% endif %}
+        {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}
+        {% if p.year %} ({{ p.year }}){% endif %}
+      </p>
+      <p class="paper-links">
+        {% if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
+        {% if p.ssrn %}<a href="{{ p.ssrn }}">SSRN</a>{% endif %}
+        {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Journal</a>{% endif %}
+      </p>
+      {% if p.abstract %}
+      <details class="abstract">
+        <summary>Abstract</summary>
+        <p>{{ p.abstract }}</p>
+      </details>
+      {% endif %}
+    </article>
+    {% endfor %}
+    {% endif %}
+  {% endfor %}
+</section>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#d9dee5"/>
+  <circle cx="300" cy="300" r="130" fill="#9aa5b4"/>
+  <path d="M90 800c0-190 95-300 210-300s210 110 210 300z" fill="#9aa5b4"/>
+  <text x="300" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#4a5462">Replace with headshot.jpg</text>
+</svg>

@@ -1,0 +1,104 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --accent: #1a4d8f;
+  --rule: #e2e2e2;
+  --bg: #fff;
+  --max-width: 860px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header, .site-main, .site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-name { font-weight: bold; color: var(--text); }
+.site-nav a { margin-left: 1.25rem; }
+
+/* Headshot left, bio right */
+.intro {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2.5rem 0 2rem;
+}
+.headshot {
+  flex: 0 0 220px;
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+}
+.bio h1 { margin: 0 0 0.25rem; font-size: 2rem; }
+.bio .role { margin: 0 0 1rem; color: var(--muted); }
+.bio .links a { margin-right: 1.25rem; }
+
+/* Papers */
+.papers h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+}
+.group-title {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.paper { margin-bottom: 1.75rem; }
+.paper-title { margin: 0 0 0.2rem; font-size: 1.15rem; }
+.paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); font-size: 0.95rem; }
+.paper-links a { margin-right: 1rem; }
+
+/* Accordion abstract (native <details>, no JS) */
+.abstract summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.95rem;
+  user-select: none;
+}
+.abstract summary:hover { text-decoration: underline; }
+.abstract p {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--rule);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Stack headshot above bio on narrow screens */
+@media (max-width: 640px) {
+  .intro { flex-direction: column; gap: 1.25rem; }
+  .headshot { width: 180px; flex-basis: auto; }
+}

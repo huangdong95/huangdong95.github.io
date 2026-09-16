@@ -1,0 +1,33 @@
+title: Dong Huang
+description: Finance professor — bio and research.
+url: "https://donghuang.github.io"
+baseurl: ""
+
+# Personal details used across the site
+author:
+  name: Dong Huang
+  title: Assistant Professor of Finance
+  affiliation: Your University
+  email: your.email@university.edu
+  headshot: /assets/img/headshot.svg   # placeholder; change to headshot.jpg once you add your photo
+  cv: /assets/cv.pdf
+  links:
+    - label: Google Scholar
+      url: https://scholar.google.com/
+    - label: SSRN
+      url: https://ssrn.com/
+    - label: LinkedIn
+      url: https://www.linkedin.com/
+
+# Jekyll settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .jekyll-cache/
