@@ -53,8 +53,8 @@ a:hover { text-decoration: underline; }
   padding: 2.5rem 0 2rem;
 }
 .headshot {
-  flex: 0 0 300px;
-  width: 300px;
+  flex: 0 0 340px;
+  width: 340px;
   height: auto;
   border-radius: 6px;
 }
