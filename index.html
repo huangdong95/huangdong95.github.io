@@ -7,12 +7,24 @@ layout: default
     <h1>{{ site.author.name }}</h1>
     <p class="role">{{ site.author.title }}<br>{{ site.author.affiliation }}</p>
     <p>
-      I am a finance professor whose research focuses on ... Replace this paragraph with
-      a short bio: research interests, where you got your PhD, and anything else
-      you want visitors to know first.
+      I am a Ph.D. candidate in Financial Economics at the Yale School of Management.
     </p>
+    <p>
+      My research interests include <strong>household finance, behavioral finance, and
+      Fintech.</strong> My job market paper studies how firms can "shift the blame" and
+      insulate themselves from customer relationship damage by delegating aggressive
+      conduct, turning a canonical agency cost of delegation into part of its return.
+      The paper uses the debt collection industry as an example and applies causal
+      inference methods, large language models, and machine learning to study
+      interactions between firms and their customers.
+    </p>
+    <p>
+      I hold a B.A. in Economics &amp; Finance, a B.S. in Pure &amp; Applied Mathematics,
+      and a Master of Finance from Tsinghua University.
+    </p>
+    <p><strong>I'm currently on the 2026-27 academic job market.</strong></p>
+    <p class="contact">Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
     <p class="links">
-      <a href="mailto:{{ site.author.email }}">Email</a>
       {% for l in site.author.links %}
       <a href="{{ l.url }}">{{ l.label }}</a>
       {% endfor %}

@@ -1,23 +1,21 @@
 title: Dong Huang
-description: Finance professor — bio and research.
+description: Dong Huang — Ph.D. candidate in Financial Economics at Yale SOM. Household finance, behavioral finance, and Fintech.
 url: "https://www.donghuang-finance.com"
 baseurl: ""
 
 # Personal details used across the site
 author:
   name: Dong Huang
-  title: Assistant Professor of Finance
+  title: Ph.D. Candidate in Financial Economics
   affiliation: Yale School of Management
-  email: your.email@university.edu
+  email: dong.huang@yale.edu
   headshot: /assets/img/headshot.jpg
   cv: /assets/cv.pdf
   links:
     - label: Google Scholar
-      url: https://scholar.google.com/
+      url: https://scholar.google.com/citations?user=P-4TPKYAAAAJ&hl=en
     - label: SSRN
-      url: https://ssrn.com/
-    - label: LinkedIn
-      url: https://www.linkedin.com/
+      url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6040296
 
 # Jekyll settings
 markdown: kramdown
