@@ -55,7 +55,7 @@ layout: default
         {%- if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif -%}
         {%- if p.nber %}{% if p.pdf %} | {% endif %}<a href="https://www.nber.org/papers/w{{ p.nber }}">NBER Working Paper No. {{ p.nber }}</a>{% endif -%}
         {%- if p.doi %}{% if p.pdf or p.nber %} | {% endif %}<a href="https://doi.org/{{ p.doi }}">Journal</a>{% endif -%}
-        {%- if p.media %}{% if p.pdf or p.nber or p.doi %} | {% endif %}<a href="{{ p.media }}">Media</a>{% endif -%}
+        {%- if p.media %}{% if p.pdf or p.nber or p.doi %} | {% endif %}Media: {% for m in p.media %}<a href="{{ m.url }}">{{ m.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif -%}
       </p>
       {% endif %}
       {% if p.abstract %}
