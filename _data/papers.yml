@@ -1,5 +1,5 @@
 # One entry per paper. Order within each status group is the order shown.
-# status must match a group name in index.html ("Job Market Paper" or "Working Papers").
+# status must match a group name in index.html ("Job Market Paper" or "Publications and Working Papers").
 # Optional fields: coauthors (list of {name, url?}), note (italic text after the title), venue, year,
 #                  pdf, nber (NBER working paper number), doi, media (list of {label, url}), abstract.
 
@@ -24,7 +24,7 @@
       url: https://faculty.som.yale.edu/jameschoi/
     - name: Zhishu Yang
     - name: Qi Zhang
-  status: Working Papers
+  status: Publications and Working Papers
   year: 2025
   nber: 33669
   media:
@@ -45,7 +45,7 @@
     - name: William N. Goetzmann
       url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
     - name: Milad Nozari
-  status: Working Papers
+  status: Publications and Working Papers
   year: 2026
   nber: 34837
   media:
@@ -64,7 +64,7 @@
   coauthors:
     - name: William N. Goetzmann
       url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
-  status: Working Papers
+  status: Publications and Working Papers
   year: 2023
   nber: 31498
   abstract: >

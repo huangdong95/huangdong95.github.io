@@ -2,6 +2,7 @@
   --text: #222;
   --muted: #666;
   --accent: #1a4d8f;
+  --yale-blue: #00356b;
   --rule: #e2e2e2;
   --bg: #fff;
   --max-width: 1250px;
@@ -66,14 +67,14 @@ a:hover { text-decoration: underline; }
 
 /* Papers */
 .papers h2 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   border-bottom: 1px solid var(--rule);
   padding-bottom: 0.4rem;
 }
 .group-title {
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   margin: 2rem 0 0.75rem;
-  color: var(--muted);
+  color: var(--yale-blue);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
