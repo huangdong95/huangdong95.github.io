@@ -1,6 +1,8 @@
 # One entry per paper. Order within each status group is the order shown.
 # status must match a group name in index.html ("Job Market Paper" or "Publications and Working Papers").
-# Optional fields: coauthors (list of {name, url?}), note (italic text after the title), venue, year,
+# Optional fields: coauthors (list of {name, url?}), note (italic text after the title), year,
+#                  venue (journal, on its own line), venue_status (before the journal, e.g. "Reject and Resubmit"),
+#                  venue_details (after the journal, e.g. volume/pages),
 #                  pdf, nber (NBER working paper number), doi, media (list of {label, url}), abstract.
 
 - title: "Delegating Dirty Work: Blame Shifting and the Boundary of the Firm"
@@ -13,10 +15,10 @@
     lender that randomly assigns delinquent borrowers to in-house and third-party debt
     collectors, who differ systematically in collection harshness as measured by their
     propensity to call borrowers' social contacts. Social-contact calling raises
-    short-run debt recovery in both sectors, but only in-house calling deters borrowers,
-    disproportionately high-credit-quality borrowers, from returning to the lender after
-    repaying. Outsourcing therefore preserves the recovery benefit of aggressive conduct
-    while insulating the firm from its relationship cost.
+    short-run debt recovery in both sectors, but only in-house calling deters borrowers
+    — particularly high-credit-quality borrowers — from returning to the lender after
+    repaying. Outsourcing therefore preserves the benefit of aggressive conduct while
+    insulating the firm from its relationship cost.
 
 - title: "How Good is AI at Twisting Arms? Experiments in Debt Collection"
   coauthors:
@@ -26,6 +28,8 @@
     - name: Qi Zhang
   status: Publications and Working Papers
   year: 2025
+  venue_status: Reject and Resubmit
+  venue: Journal of Finance
   nber: 33669
   media:
     - label: Auto Finance News
@@ -39,26 +43,6 @@
     payment one year later and are more likely to miss subsequent payments than
     borrowers who were always called by humans. AI's lesser ability to extract promises
     that feel binding may contribute to the performance gap.
-
-- title: "Non-Fungible Tokens as Investment"
-  coauthors:
-    - name: William N. Goetzmann
-      url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
-    - name: Milad Nozari
-  status: Publications and Working Papers
-  year: 2026
-  nber: 34837
-  media:
-    - label: VoxEU
-      url: https://cepr.org/voxeu/columns/non-fungible-token-bubble-what-investors-actually-earned
-  abstract: >
-    NFTs provided an extraordinary real-time laboratory for bubble economics: returns
-    were exceptionally right-skewed, illiquidity pervaded even the most active
-    platforms, and a handful of trades drove aggregate performance. Investors
-    extrapolating from realized returns without recognizing selection bias and
-    survivorship faced a substantial risk of disappointment. As our data and simulations
-    confirm, successful NFT investing during the bubble required an almost perfect
-    confluence of timing, liquidity, and luck.
 
 - title: "Selection-Neglect in the NFT Bubble"
   coauthors:
@@ -79,3 +63,43 @@
     were subject to severe selection bias due in part to seller loss aversion delaying
     the onset of the crash. Finally, we show that market participants with sophisticated
     bidding behavior were less subject to selection bias and performed better.
+
+- title: "Heterogeneous Housing Markets: Selection Bias and Latent Sub-Markets in U.S. House Price Indexes"
+  coauthors:
+    - name: William N. Goetzmann
+      url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
+  status: Publications and Working Papers
+  abstract: >
+    The most widely used U.S. house price indexes estimate a single price path for each
+    metropolitan area and assume that the homes that sell are representative of the
+    wider housing stock. We develop a Bayesian repeat-sales model that relaxes both
+    assumptions. It corrects a repeat-sales index for selection on the return since
+    purchase using a nonparametric selection function and it assigns properties to
+    latent sub-market, each with its own loading on a common factor, idiosyncratic
+    drift, and selection function. Across the 20 Case-Shiller metros, uncorrected
+    indexes overstate 1990–2020 appreciation in every metro, by 0.2 to 1.9 percentage
+    points a year. For New Haven County, the model identifies three sub-markets that
+    are geographically concentrated without using location data. Selection bias is
+    concentrated in a small, high-volatility city segment. Membership in this segment
+    changes at the city boundary in ways tract demographics do not explain.
+
+- title: "Non-Fungible Tokens as Investment"
+  coauthors:
+    - name: William N. Goetzmann
+      url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
+    - name: Milad Nozari
+  status: Publications and Working Papers
+  venue: "International Journal of Arts Management"
+  venue_details: "29(1), 2026, pp. 74–101"
+  nber: 34837
+  media:
+    - label: VoxEU
+      url: https://cepr.org/voxeu/columns/non-fungible-token-bubble-what-investors-actually-earned
+  abstract: >
+    NFTs provided a real-time laboratory for bubble economics: returns were
+    exceptionally right-skewed, illiquidity pervaded even the most active platforms,
+    and a handful of trades drove aggregate performance. Investors extrapolating from
+    realized returns without recognizing selection bias and survivorship faced a
+    substantial risk of disappointment. As our data and simulations confirm,
+    successful NFT investing during the bubble required an almost perfect confluence
+    of timing, liquidity, and luck.

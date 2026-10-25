@@ -79,9 +79,10 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.05em;
 }
 .paper { margin-bottom: 1.75rem; }
-.paper-title { margin: 0 0 0.2rem; font-size: 1.15rem; }
+.paper-title { margin: 0 0 0.2rem; font-size: 1.25rem; }
 .paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
+.paper-venue { color: var(--text); font-weight: bold; }
 .paper-links a { margin: 0 0.25rem; }
 .coauthor {
   color: inherit;
