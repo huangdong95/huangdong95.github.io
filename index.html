@@ -43,7 +43,7 @@ layout: default
     <h3 class="group-title">{{ name }}</h3>
     {% for p in g.items %}
     <article class="paper">
-      <h4 class="paper-title">{{ p.title }}{% if p.note %} <em class="paper-note">{{ p.note }}</em>{% endif %}</h4>
+      <h4 class="paper-title">{% if p.pdf %}<a href="{{ p.pdf | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}{% if p.note %} <em class="paper-note">{{ p.note }}</em>{% endif %}</h4>
       {% if p.coauthors or p.year %}
       <p class="paper-meta">
         {% if p.coauthors %}with {% assign n = p.coauthors | size -%}
@@ -62,12 +62,11 @@ layout: default
         {%- if p.venue_details %} {{ p.venue_details }}{% endif -%}
       </p>
       {% endif %}
-      {% if p.pdf or p.nber or p.doi or p.media %}
+      {% if p.nber or p.doi or p.media %}
       <p class="paper-links">
-        {%- if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif -%}
-        {%- if p.nber %}{% if p.pdf %} | {% endif %}<a href="https://www.nber.org/papers/w{{ p.nber }}">NBER Working Paper No. {{ p.nber }}</a>{% endif -%}
-        {%- if p.doi %}{% if p.pdf or p.nber %} | {% endif %}<a href="https://doi.org/{{ p.doi }}">Journal</a>{% endif -%}
-        {%- if p.media %}{% if p.pdf or p.nber or p.doi %} | {% endif %}Media: {% for m in p.media %}<a href="{{ m.url }}">{{ m.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif -%}
+        {%- if p.nber %}<a href="https://www.nber.org/papers/w{{ p.nber }}">NBER Working Paper No. {{ p.nber }}</a>{% endif -%}
+        {%- if p.doi %}{% if p.nber %} | {% endif %}<a href="https://doi.org/{{ p.doi }}">Journal</a>{% endif -%}
+        {%- if p.media %}{% if p.nber or p.doi %} | {% endif %}Media: {% for m in p.media %}<a href="{{ m.url }}">{{ m.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif -%}
       </p>
       {% endif %}
       {% if p.abstract %}

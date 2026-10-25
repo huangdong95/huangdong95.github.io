@@ -80,6 +80,7 @@ a:hover { text-decoration: underline; }
 }
 .paper { margin-bottom: 1.75rem; }
 .paper-title { margin: 0 0 0.2rem; font-size: 1.25rem; }
+.paper-title a { color: inherit; }
 .paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
 .paper-venue { color: var(--text); font-weight: bold; }

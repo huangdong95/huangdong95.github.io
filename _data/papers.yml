@@ -3,7 +3,7 @@
 # Optional fields: coauthors (list of {name, url?}), note (italic text after the title), year,
 #                  venue (journal, on its own line), venue_status (before the journal, e.g. "Reject and Resubmit"),
 #                  venue_details (after the journal, e.g. volume/pages),
-#                  pdf, nber (NBER working paper number), doi, media (list of {label, url}), abstract.
+#                  pdf (path; links the title), nber (NBER working paper number), doi, media (list of {label, url}), abstract.
 
 - title: "Delegating Dirty Work: Blame Shifting and the Boundary of the Firm"
   status: Job Market Paper
@@ -30,6 +30,7 @@
   year: 2025
   venue_status: Reject and Resubmit
   venue: Journal of Finance
+  pdf: /assets/papers/AI_debt_collection_20250330.pdf
   nber: 33669
   media:
     - label: Auto Finance News
@@ -50,19 +51,18 @@
       url: https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann
   status: Publications and Working Papers
   year: 2023
+  pdf: /assets/papers/NFT_Selection_Neglect.pdf
   nber: 31498
   abstract: >
     Using transaction data from a large non-fungible token (NFT) trading platform, this
-    paper examines how the behavioral bias of selection-neglect interacts with
-    extrapolative beliefs, accelerating the boom and delaying the crash in the recent
-    NFT bubble. We show that the price-volume relationship is consistent with
-    extrapolative beliefs about increasing prices which were plausibly triggered by a
-    macroeconomic shock. We test the hypothesis that agents prone to selection-neglect
-    formed even more optimistic beliefs and traded more aggressively than their
-    counterparts during the boom. When liquidity for NFTs declined, observed NFT prices
-    were subject to severe selection bias due in part to seller loss aversion delaying
-    the onset of the crash. Finally, we show that market participants with sophisticated
-    bidding behavior were less subject to selection bias and performed better.
+    paper examines how selection-neglect interacts with extrapolative beliefs, possibly
+    accelerating the boom and delaying the crash in the recent NFT bubble. We document
+    extrapolative beliefs about increasing prices and an upward sample selection bias in
+    observed transaction prices. We show that agents prone to selection-neglect formed
+    more optimistic beliefs and traded more aggressively during the boom. When market
+    liquidity declined, selection bias intensified and delayed the crash onset. Finally,
+    investors with sophisticated bidding behavior showed less selection-neglect,
+    responded more strongly to declining market conditions, and performed better.
 
 - title: "Heterogeneous Housing Markets: Selection Bias and Latent Sub-Markets in U.S. House Price Indexes"
   coauthors:
@@ -91,14 +91,15 @@
   status: Publications and Working Papers
   venue: "International Journal of Arts Management"
   venue_details: "29(1), 2026, pp. 74–101"
+  pdf: /assets/papers/GNH_NFT_Investment_final.pdf
   nber: 34837
   media:
     - label: VoxEU
       url: https://cepr.org/voxeu/columns/non-fungible-token-bubble-what-investors-actually-earned
   abstract: >
-    NFTs provided a real-time laboratory for bubble economics: returns were
-    exceptionally right-skewed, illiquidity pervaded even the most active platforms,
-    and a handful of trades drove aggregate performance. Investors extrapolating from
+    NFTs provided an extraordinary real-time laboratory for bubble economics: returns
+    were exceptionally right-skewed, illiquidity pervaded even the most active
+    platforms, and a handful of trades drove aggregate performance. Investors extrapolating from
     realized returns without recognizing selection bias and survivorship faced a
     substantial risk of disappointment. As our data and simulations confirm,
     successful NFT investing during the bubble required an almost perfect confluence
