@@ -81,6 +81,19 @@ a:hover { text-decoration: underline; }
 .paper { margin-bottom: 1.75rem; }
 .paper-title { margin: 0 0 0.2rem; font-size: 1.25rem; }
 .paper-title a { color: inherit; }
+/* Document icon marking titles that link to a PDF */
+.link-icon {
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.35em;
+  vertical-align: -0.08em;
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.paper-title a:hover .link-icon { stroke: var(--accent); }
 .paper-note { font-weight: normal; color: var(--muted); font-size: 1rem; }
 .paper-meta, .paper-links { margin: 0 0 0.3rem; color: var(--muted); }
 .paper-venue { color: var(--text); font-weight: bold; }
