@@ -104,6 +104,29 @@ a:hover { text-decoration: underline; }
   border-left: 3px solid var(--rule);
 }
 
+/* CV page: embedded PDF */
+.cv { padding: 2rem 0 0; }
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+.cv-header h1 { margin: 0; font-size: 2rem; }
+.cv-frame {
+  position: relative; /* PDF.js requires an absolutely positioned scroll container */
+  height: calc(100vh - 12rem);
+  min-height: 600px;
+  border: 1px solid var(--rule);
+  background: #f2f2f2;
+}
+.cv-viewer {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+}
+.cv-fallback { color: var(--muted); font-size: 0.9rem; }
+
 .site-footer {
   margin-top: 3rem;
   padding-top: 1rem;

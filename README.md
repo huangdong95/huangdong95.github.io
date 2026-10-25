@@ -7,7 +7,7 @@ Personal academic site, built with Jekyll and served by GitHub Pages.
 - **Bio / name / links** – `_config.yml` (the `author:` block) and the bio paragraph in `index.html`.
 - **Papers** – add an entry to `_data/papers.yml`. Put PDFs in `assets/papers/`.
 - **Headshot** – replace `assets/img/headshot.jpg`.
-- **CV** – put it at `assets/cv.pdf`.
+- **CV** – put it at `assets/Dong_Huang_CV.pdf`.
 - **Styling** – `assets/css/site.css`.
 - **New pages** – create e.g. `teaching.md` with `layout: default` front matter and link it from `_layouts/default.html`.
 

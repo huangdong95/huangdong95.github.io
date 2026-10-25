@@ -10,8 +10,10 @@ author:
   affiliation: Yale School of Management
   email: dong.huang@yale.edu
   headshot: /assets/img/headshot.jpg
-  cv: /assets/cv.pdf
+  cv: /assets/Dong_Huang_CV.pdf
   links:
+    - label: Curriculum Vitae
+      url: /cv/
     - label: Google Scholar
       url: https://scholar.google.com/citations?user=P-4TPKYAAAAJ&hl=en
     - label: SSRN

@@ -1,0 +1,51 @@
+---
+layout: default
+title: Curriculum Vitae
+permalink: /cv/
+---
+<!-- The CV is rendered with PDF.js rather than the browser's PDF viewer, so viewer
+     extensions (e.g. Google Scholar PDF Reader) don't take over the embed. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf_viewer.min.css">
+
+<section class="cv">
+  <div class="cv-header">
+    <h1>Curriculum Vitae</h1>
+    <a href="{{ site.author.cv | relative_url }}" download="Dong_Huang_CV.pdf">Download PDF</a>
+  </div>
+  <div class="cv-frame">
+    <div id="cv-viewer" class="cv-viewer"><div class="pdfViewer"></div></div>
+  </div>
+  <p class="cv-fallback">
+    If the CV does not display, <a href="{{ site.author.cv | relative_url }}">open the PDF directly</a>.
+  </p>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf_viewer.min.js"></script>
+<script>
+  (function () {
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    var eventBus = new pdfjsViewer.EventBus();
+    var linkService = new pdfjsViewer.PDFLinkService({
+      eventBus: eventBus,
+      externalLinkTarget: pdfjsViewer.LinkTarget.BLANK
+    });
+    var viewer = new pdfjsViewer.PDFViewer({
+      container: document.getElementById("cv-viewer"),
+      eventBus: eventBus,
+      linkService: linkService
+    });
+    linkService.setViewer(viewer);
+
+    // Fit pages to the frame width, and refit when the window resizes.
+    eventBus.on("pagesinit", function () { viewer.currentScaleValue = "page-width"; });
+    window.addEventListener("resize", function () { viewer.currentScaleValue = "page-width"; });
+
+    pdfjsLib.getDocument("{{ site.author.cv | relative_url }}").promise.then(function (doc) {
+      viewer.setDocument(doc);
+      linkService.setDocument(doc, null);
+    });
+  })();
+</script>
