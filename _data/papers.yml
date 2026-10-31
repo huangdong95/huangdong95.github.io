@@ -76,7 +76,7 @@
     wider housing stock. We develop a Bayesian repeat-sales model that relaxes both
     assumptions. It corrects a repeat-sales index for selection on the return since
     purchase using a nonparametric selection function and it assigns properties to
-    latent sub-market, each with its own loading on a common factor, idiosyncratic
+    latent sub-markets, each with its own loading on a common factor, idiosyncratic
     drift, and selection function. Across the 20 Case-Shiller metros, uncorrected
     indexes overstate 1990–2020 appreciation in every metro, by 0.2 to 1.9 percentage
     points a year. For New Haven County, the model identifies three sub-markets that
