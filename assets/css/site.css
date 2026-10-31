@@ -53,17 +53,25 @@ a:hover { text-decoration: underline; }
   align-items: flex-start;
   padding: 2.5rem 0 2rem;
 }
-.headshot {
+/* Photo with contact and profile links underneath */
+.sidebar {
   flex: 0 0 340px;
   width: 340px;
-  height: auto;
-  border-radius: 6px;
   margin-top: 13px; /* align top edge with the cap height of the h1, not its line box */
 }
+.headshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.sidebar .contact,
+.sidebar .links { font-size: 1.1em; } /* ~19px vs. 17px body text */
+.sidebar .contact { margin: 0.9rem 0 0.4rem; text-align: center; }
+.sidebar .links { margin: 0; text-align: center; }
+.sidebar .links a { display: block; margin: 0.2rem 0; }
 .bio h1 { margin: 0 0 0.25rem; font-size: 2rem; }
 .bio .role { margin: 0 0 1rem; color: var(--muted); }
-.bio .contact { margin-bottom: 0.25rem; }
-.bio .links a { margin-right: 1.25rem; }
 
 /* Papers */
 .papers h2 {
@@ -155,5 +163,6 @@ a:hover { text-decoration: underline; }
 /* Stack headshot above bio on narrow screens */
 @media (max-width: 640px) {
   .intro { flex-direction: column; gap: 1.25rem; }
-  .headshot { width: 220px; flex-basis: auto; }
+  .sidebar { width: fit-content; flex-basis: auto; margin-top: 0; }
+  .headshot { width: 220px; margin: 0 auto; }
 }

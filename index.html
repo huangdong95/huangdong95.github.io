@@ -2,7 +2,15 @@
 layout: default
 ---
 <section class="intro">
-  <img class="headshot" src="{{ site.author.headshot | relative_url }}" alt="Photo of {{ site.author.name }}">
+  <div class="sidebar">
+    <img class="headshot" src="{{ site.author.headshot | relative_url }}" alt="Photo of {{ site.author.name }}">
+    <p class="contact">Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <p class="links">
+      {% for l in site.author.links %}
+      <a href="{{ l.url }}">{{ l.label }}</a>
+      {% endfor %}
+    </p>
+  </div>
   <div class="bio">
     <h1>{{ site.author.name }}</h1>
     <p class="role">{{ site.author.title }}<br>{{ site.author.affiliation }}</p>
@@ -25,12 +33,6 @@ layout: default
     <p><strong>I am on the 2026&ndash;27 academic job market.</strong></p>
     <p><strong>References</strong>: James J. Choi (Chair), William N. Goetzmann,
       Paul Goldsmith-Pinkham, and Nicholas C. Barberis</p>
-    <p class="contact">Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-    <p class="links">
-      {% for l in site.author.links %}
-      <a href="{{ l.url }}">{{ l.label }}</a>
-      {% endfor %}
-    </p>
   </div>
 </section>
 
