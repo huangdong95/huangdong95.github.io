@@ -9,16 +9,16 @@
   status: Job Market Paper
   abstract: >
     This paper shows that delegating unpopular actions to an external agent can protect
-    firms' customer relationships from the adverse consequences of such actions. I exploit
-    a quasi-experimental setting at an online consumer lender in China that randomly
-    assigns delinquent borrowers to in-house or third-party debt collectors, who differ
-    in collection harshness as measured by their propensity to call borrowers' social
-    contacts. Harsher collection raises short-run repayment under both arrangements, but
-    only in-house harshness deters borrowers—particularly those of higher credit
-    quality—from returning to the lender after repayment. Differences in the collectors'
-    communication strategies captured in call transcripts do not explain this asymmetry.
-    This blame-shifting effect suggests a benefit of outsourcing that firms should
-    consider when setting their organizational boundaries.
+    firms' customer relationships from the adverse consequences of such actions. This is
+    a benefit of outsourcing that firms should consider when setting their organizational
+    boundaries. I exploit a quasi-experimental setting at an online consumer lender in
+    China that randomly assigns delinquent borrowers to in-house or third-party debt
+    collectors, who differ in collection harshness as measured by their propensity to call
+    borrowers' social contacts. Harsher collection raises short-run repayment under both
+    arrangements, but only in-house harshness deters borrowers—particularly those of
+    higher credit quality—from returning to the lender after repayment. Consistent with
+    blame shifting, call transcripts show that harsh collection provokes borrower anger
+    only when the collector is in-house.
 
 - title: "How Good is AI at Twisting Arms? Experiments in Debt Collection"
   coauthors:
