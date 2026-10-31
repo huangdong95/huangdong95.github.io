@@ -76,18 +76,20 @@ a:hover { text-decoration: underline; }
 /* Papers */
 .papers h2 {
   font-size: 1.9rem;
+  text-align: center;
   border-bottom: 1px solid var(--rule);
   padding-bottom: 0.4rem;
 }
 .group-title {
   font-size: 1.4rem;
   margin: 2rem 0 0.75rem;
-  color: var(--yale-blue);
+  color: var(--text);
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .paper { margin-bottom: 1.75rem; }
-.paper-title { margin: 0 0 0.2rem; font-size: 1.25rem; }
+.paper-title { margin: 0 0 0.2rem; font-size: 1.25rem; color: var(--yale-blue); }
 .paper-title a { color: inherit; }
 /* Document icon marking titles that link to a PDF */
 .link-icon {
