@@ -7,18 +7,18 @@
 
 - title: "Delegating Dirty Work: Blame Shifting and the Boundary of the Firm"
   status: Job Market Paper
-  note: "(Draft coming soon)"
   abstract: >
-    Why do firms outsource customer-facing activities to agents with weaker incentives
-    to protect customer relationships? We show that delegation provides an offsetting
-    benefit: blame shifting. We exploit a quasi-random setting at an online consumer
-    lender that randomly assigns delinquent borrowers to in-house and third-party debt
-    collectors, who differ systematically in collection harshness as measured by their
-    propensity to call borrowers' social contacts. Social-contact calling raises
-    short-run debt recovery in both sectors, but only in-house calling deters borrowers
-    — particularly high-credit-quality borrowers — from returning to the lender after
-    repaying. Outsourcing therefore preserves the benefit of aggressive conduct while
-    insulating the firm from its relationship cost.
+    This paper shows that delegating unpopular actions to an external agent can protect
+    firms' customer relationships from the adverse consequences of such actions. I exploit
+    a quasi-experimental setting at an online consumer lender in China that randomly
+    assigns delinquent borrowers to in-house or third-party debt collectors, who differ
+    in collection harshness as measured by their propensity to call borrowers' social
+    contacts. Harsher collection raises short-run repayment under both arrangements, but
+    only in-house harshness deters borrowers—particularly those of higher credit
+    quality—from returning to the lender after repayment. Differences in the collectors'
+    communication strategies captured in call transcripts do not explain this asymmetry.
+    This blame-shifting effect suggests a benefit of outsourcing that firms should
+    consider when setting their organizational boundaries.
 
 - title: "How Good is AI at Twisting Arms? Experiments in Debt Collection"
   coauthors:
