@@ -33,8 +33,11 @@ layout: default
       &amp; Applied Mathematics from Tsinghua University.
     </p>
     <p><strong>I am on the 2026&ndash;27 academic job market.</strong></p>
-    <p><strong>References</strong>: James J. Choi (Chair), William N. Goetzmann,
-      Paul Goldsmith-Pinkham, and Nicholas C. Barberis</p>
+    <p><strong>References</strong>:
+      <a class="coauthor" href="https://faculty.som.yale.edu/jameschoi/">James J. Choi</a> (Chair),
+      <a class="coauthor" href="https://som.yale.edu/faculty-research/faculty-directory/william-n-goetzmann">William N. Goetzmann</a>,
+      <a class="coauthor" href="https://paulgp.com/">Paul Goldsmith-Pinkham</a>, and
+      <a class="coauthor" href="https://nicholasbarberis.github.io/">Nicholas C. Barberis</a></p>
   </div>
 </section>
 
@@ -77,7 +80,7 @@ layout: default
       </p>
       {% endif %}
       {% if p.abstract %}
-      <details class="abstract">
+      <details class="abstract"{% if p.abstract_open %} open{% endif %}>
         <summary>Abstract</summary>
         <p>{{ p.abstract }}</p>
       </details>

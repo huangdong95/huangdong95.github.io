@@ -3,10 +3,13 @@
 # Optional fields: coauthors (list of {name, url?}), note (italic text after the title), year,
 #                  venue (journal, on its own line), venue_status (before the journal, e.g. "Reject and Resubmit"),
 #                  venue_details (after the journal, e.g. volume/pages),
-#                  pdf (path; links the title), nber (NBER working paper number), doi, media (list of {label, url}), abstract.
+#                  pdf (path; links the title), nber (NBER working paper number), doi, media (list of {label, url}), abstract,
+#                  abstract_open (true = abstract shown expanded on page load).
 
 - title: "Delegating Dirty Work: Blame Shifting and the Boundary of the Firm"
   status: Job Market Paper
+  pdf: /assets/papers/Delegating_Dirty_Work_Dong_Huang.pdf
+  abstract_open: true
   abstract: >
     This paper shows that delegating unpopular actions to an external agent can protect
     firms' customer relationships from the adverse consequences of such actions. This is
